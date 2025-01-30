@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Me</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 20px;
+    }
+    img {
+      max-height: 400px;
+    }
+    .video-container {
+      width: 300px;
+       height: 400px;
+       margin: 0 auto;
+    }
+    .picture-container {
+      margin: 20px 0;
+    }
+    audio, video {
+      display: block;
+      margin: 20px auto;
+      max-width: 90%;
+    }
+  </style>
+</head>
+<body>
+  <h1>About Me</h1>
+  <p>Hi! I'm Chiamaka. I'm passionate about technology, creativity, and problem-solving. Here's a glimpse into who I am:</p>
+
+  <!-- Responsive Images Using Picture Element -->
+  <div class="picture-container">
+    <picture>
+      <source media="(min-width: 1024px)" >
+      <source media="(min-width:650px)" >
+      <source media="(min-width:465px)">
+  <img src="./images/amaka.jpg" alt="A picture that represents me">
+    
+    </picture>
+    <p>A responsive image showcasing my personality and style.</p>
+  </div>
+
+  <!-- Audio Element -->
+  <div class="audio-container">
+    <audio src="./audio/running-stream-water-sound-239612.mp3" controls> </audio>
+    <p>I know it might sound odd, but the sound of running water has a calming effect on me.</p>
+  </div>
+
+  <!-- Video Element -->
+  <div class="video-container">
+    <iframe src="https://www.youtube.com/embed?v=v-VFP0piZLw&list=PLYzX0ekE83ju9TvwbmdIVvvO0r-i5gBCp&index=21" frameborder="0"></iframe>
+    <p>A video explaining what drives me.</p>
+  </div>
+</body>
+</html>
